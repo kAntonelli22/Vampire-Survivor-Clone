@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://cc84kak2soljk"]
+
+[ext_resource type="Texture2D" uid="uid://l3bubbh7eshu" path="res://main/background.aseprite" id="1_53q0u"]
+[ext_resource type="Script" uid="uid://dgptversjodmu" path="res://main/main.gd" id="1_xwkvk"]
+[ext_resource type="PackedScene" uid="uid://dmepfxhg6pgyd" path="res://main/player.tscn" id="3_c651c"]
+[ext_resource type="PackedScene" uid="uid://x4qydbr1000v" path="res://main/enemy.tscn" id="4_c651c"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_xwkvk")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_53q0u")
+
+[node name="Player" parent="." instance=ExtResource("3_c651c")]
+position = Vector2(105.111, 85.3173)
+
+[node name="Enemy" parent="." instance=ExtResource("4_c651c")]
+position = Vector2(277, 30)
