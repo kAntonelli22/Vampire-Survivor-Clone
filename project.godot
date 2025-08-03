@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Template"
-config/tags=PackedStringArray("active", "template")
+config/name="Vamp"
+config/tags=PackedStringArray("2d", "active", "small")
 run/main_scene="uid://cc84kak2soljk"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
